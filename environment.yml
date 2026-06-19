@@ -1,0 +1,23 @@
+name: freqastar
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - osmnx=1.9.*          # OSM road-network download + geometry
+  - pyproj=3.*           # project crash lat/lon into the graph CRS
+  - scikit-learn=1.*     # spatial index for osmnx nearest_edges
+  - networkx=3.*         # graph data structures + classic algorithms
+  - numpy=1.26.*
+  - pandas=2.*
+  - scipy=1.*
+  - matplotlib=3.*
+  - folium=0.16.*        # interactive route maps
+  - contextily=1.*       # tiled basemaps under publication route maps
+  - selenium=4.*         # headless-browser screenshot of HTML maps -> PNG
+  - pillow=10.*          # wrap captured PNG maps into PDF
+  - requests=2.*         # weather / traffic APIs
+  - tqdm=4.*             # progress bars
+  - pytest=8.*           # unit tests
+  - pip
+  - pip:
+      - geopy            # distance helpers (optional)
